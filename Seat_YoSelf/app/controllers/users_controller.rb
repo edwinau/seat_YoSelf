@@ -5,11 +5,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find(params[:id])
+    @user = current_user
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = current_user
   end
 
   def create
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = User.find(params[:id])
+    @user = current_user
     @user.destroy
     redirect_to restaurants_url
   end
