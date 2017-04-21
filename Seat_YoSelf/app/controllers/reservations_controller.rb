@@ -1,4 +1,5 @@
 class ReservationsController < ApplicationController
+    before_action :ensure_logged_in, only: [:create, :destroy]
 
   def new
     @reservation = Reservation.new
@@ -13,10 +14,12 @@ class ReservationsController < ApplicationController
   end
 
   def create
-    @reservation = Reservation.new(reservation_params)
+    # @reservation = Reservation.new(reservation_params)
+    # @reservation.user_id = current_user.id
+    @reservation = current_user.reservations.new(reservation_params)
 
     if @reservation.save
-      redirect_to restaurants_url
+      redirect_to user_url
     else
       render :new
     end
@@ -27,7 +30,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
 
     if @reservation.update_attributes(reservation_params)
-      redirect_to restaurants_url
+      redirect_to user_url
     else
       render :edit
     end

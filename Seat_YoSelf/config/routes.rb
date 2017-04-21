@@ -3,8 +3,9 @@ Rails.application.routes.draw do
   root 'restaurants#index'
 
   resources :users, :except => [:index]
-  resources :cuisines 
+  resources :cuisines
   resources :restaurants
 
   resources :reservations, :except => [:index]
+  resources :sessions, only: [:new, :create, :destroy]
 end
