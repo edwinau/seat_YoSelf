@@ -16,7 +16,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(reservation_params)
 
     if @reservation.save
-      redirect_to cuisine_restaurants_url
+      redirect_to restaurants_url
     else
       render :new
     end
@@ -27,7 +27,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
 
     if @reservation.update_attributes(reservation_params)
-      redirect_to cuisine_restaurants_url
+      redirect_to restaurants_url
     else
       render :edit
     end
@@ -36,7 +36,7 @@ class ReservationsController < ApplicationController
   def destroy
     @reservation = Reservation.find(params[:id])
     @reservation.destroy
-    redirect_to cuisine_restaurants_url
+    redirect_to restaurants_url
   end
 
   private

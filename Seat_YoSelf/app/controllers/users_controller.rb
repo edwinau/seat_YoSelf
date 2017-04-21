@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
       if @user.save
-        redirect_to cuisine_restaurants_url
+        redirect_to restaurants_url
       else
         render :new
       end
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
       if @user.update_attributes(user_params)
-        redirect_to cuisine_restaurants_url
+        redirect_to restaurants_url
       else
         render :edit
       end
@@ -34,7 +34,7 @@ class UsersController < ApplicationController
   def destroy
     @user = User.find(params[:id])
     @user.destroy
-    redirect_to cuisine_restaurants_url
+    redirect_to restaurants_url
   end
 
   private
