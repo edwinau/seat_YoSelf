@@ -1,4 +1,6 @@
 class RestaurantsController < ApplicationController
+  before_action :ensure_logged_in, only: [:create, :destroy]
+
   def index
     @restaurants = Restaurant.all
   end
@@ -12,7 +14,10 @@ class RestaurantsController < ApplicationController
   end
 
   def create
-    @restaurant = Restaurant.new(restaurant_params)
+    # @restaurant = Restaurant.new(restaurant_params)
+    # @restaurant.owner_id = current_user.id
+    @restaurant = current_user.restaurants.new(restaurant_params)
+
     if @restaurant.save
       redirect_to restaurants_path
     else
