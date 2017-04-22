@@ -1,3 +1,14 @@
 <h2><%= @cuisine.cuisine_type %></h2>
 
-@cuisine.restaurants.each do |restaurant|
+<% @cuisine.restaurants.each do |restaurant| %>
+
+<div>
+   <h4><%= restaurant.name %></h4>
+   <p><%= restaurant.description %></p>
+</div>
+
+<% end %>
+
+<p>
+<%= link_to "Edit", edit_cuisine_path(@cuisine) %>
+</p>
