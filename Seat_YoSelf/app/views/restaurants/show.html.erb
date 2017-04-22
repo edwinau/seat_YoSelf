@@ -1,0 +1,9 @@
+<hr>
+
+<%=link_to 'Back to Main', restaurants_path %>
+
+  <p><%= @restaurant.name %>, <%= @restaurant.description %></p>
+
+<%if current_user%>
+  <%=link_to 'Create new restaurant', new_restaurants_path %>
+<%end%>
