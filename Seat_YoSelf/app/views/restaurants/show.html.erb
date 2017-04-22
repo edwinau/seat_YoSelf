@@ -2,7 +2,9 @@
 
 <%=link_to 'Back to Main', restaurants_path %>
 
-  <p><%= @restaurant.name %>, <%= @restaurant.description %></p>
+  <p><img src="<%=@restaurant.photo%>"></p>
+  <p><%= @restaurant.name %></p>
+  <p><%= @restaurant.description%></p>
 
 <%if current_user%>
   <%=link_to 'Create new restaurant', new_restaurants_path %>
