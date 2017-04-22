@@ -2,6 +2,8 @@
 
 <ul>
   <% @cuisines.each do |cuisine| %>
-  <li><%= cuisine.cuisine_type %></li>
+  <li>
+    <%= link_to "#{cuisine.cuisine_type}", cuisine %>
+  </li>
 </ul>
 <% end %>
