@@ -34,6 +34,7 @@ ActiveRecord::Schema.define(version: 20170422164459) do
   end
 
   create_table "restaurants", force: :cascade do |t|
+    t.string   "photo"
     t.string   "name"
     t.text     "description"
     t.integer  "owner_id"
