@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+
+  layout "application", except: [:new]
+
   def new
   end
 

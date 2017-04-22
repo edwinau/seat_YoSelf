@@ -1,6 +1,29 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.each_restaurant {
+ width: 300px;
+ display: inline-block;
+ padding: 20px;
+}
+
+.img_index{
+  width: 100%;
+}
+
 p {
   font-family: monospace;
+}
+
+.name_index {
+  color: #1EA0E2;
+  font-size: .5em;
+}
+
+.name_descri {
+  color: black;
+  font-size: .3em;
+  font-style: italic;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

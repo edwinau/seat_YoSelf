@@ -1,9 +1,11 @@
 <br>
 
 <%@restaurants.each do |restaurant| %>
-  <p><img src="<%= restaurant.photo%> "></p>
-  <p><%= restaurant.name%></p>
-  <p><%= restaurant.description%></p>
+  <div class="each_restaurant">
+    <p><img src="<%= restaurant.photo%>", class="img_index"></p>
+    <p class="name_index"><%= restaurant.name%></p>
+    <p class="name_descri"><%= restaurant.description%></p>
+  </div>
 <%end%>
 
 <br>
