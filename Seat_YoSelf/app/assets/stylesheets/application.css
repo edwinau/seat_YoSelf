@@ -62,3 +62,65 @@
    border-collapse: collapse;
    border-spacing: 0;
  }
+
+/*CSS RESET ABOVE-- CODE STARTS BELOW*/
+
+html {
+  font-size: 4em;
+}
+
+.Layout_h1{
+  font-family: "Bookman Old Style",	/* Windows, MacOS */ "Serifa BT",	/* Windows XP. Not the same font, but the overall look is close enough. */ "URW Bookman L",	/* Unix+X+FontConfig */ "itc bookman",	/* Unix+X */ /* Fallback options */ times,	/* Unix+X, MacOS */ serif;
+  background-color: black;
+  color: white;
+  padding: 30px 0px 30px 30px
+}
+
+.layout_sign_in a:link {
+  position: absolute;
+  text-decoration: none;
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  top: 30px;
+  right: 150px;
+  font-size: 1.5em;
+  border: 1px blue solid ;
+  padding: 20px;
+  color: #3e9fe5;
+  border-radius: 15px;
+  background: white;
+  opacity: .8;
+  font-size: .3em;
+  font-family: arial;
+  text-align: left;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.layout_layout a:link {
+  position: absolute;
+  text-decoration: none;
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  top: 30px;
+  right: 40px;
+  font-size: 1.5em;
+  border: 1px blue solid ;
+  padding: 20px;
+  color: #3e9fe5;
+  border-radius: 15px;
+  background: white;
+  opacity: .8;
+  font-size: .3em;
+  font-family: arial;
+  text-align: left;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.layout_types{
+  font-family: arial;
+  font-size: .9em;
+  text-align: right;
+  padding: 10px 50px 20px 0px;
+  text-decoration: none;
+
+}

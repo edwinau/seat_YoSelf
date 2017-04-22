@@ -10,17 +10,17 @@
 
   <body>
     <header>
-      <h1>Seat Yo'Self</h1>
+      <h1 class='Layout_h1'>SEAT YO'Self</h1>
       <nav>
-        <div> <%= link_to "Restaurants", restaurants_url %> </div>
-        <div> <%= link_to "Cuisines", cuisines_url %> </div>
+        <div class="layout_types"> <%= link_to "Book by Restaurants", restaurants_url %> </div>
+        <div class="layout_types"> <%= link_to "Book by Cuisines", cuisines_url %> </div>
 
         <% if current_user %>
           <div> <%= link_to "Hey! #{current_user.username}", user_path("current") %> </div>
           <div> <%= link_to "Log out", session_path("current cookie"), :method => :delete %></div>
         <% else %>
-          <div> <%= link_to "Sign Up", new_user_url %> </div>
-          <div> <%= link_to "Login", new_session_path %> </div>
+          <div class="layout_sign_in"> <%= link_to "Sign Up", new_user_url %> </div>
+          <div class="layout_layout"> <%= link_to "Login", new_session_path %> </div>
         <% end %>
 
       </nav>
