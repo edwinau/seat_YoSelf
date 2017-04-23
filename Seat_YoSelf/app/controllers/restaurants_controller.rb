@@ -12,7 +12,7 @@ class RestaurantsController < ApplicationController
   def new
     @restaurant = Restaurant.new
 
-    # @all_cuisines = Cuisine.all used to generate the cuisines list in _form
+    @all_cuisines = Cuisine.all #used to generate the cuisines list in _form
   end
 
   def create
