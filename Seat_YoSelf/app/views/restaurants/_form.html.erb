@@ -23,6 +23,16 @@
     <%= f.text_area :description %>
   </div>
 
+  <!-- Below is a selection box that you shift click multiple options not working currently -->
+  <!-- <div>
+    <%= fields_for(@all_cuisines) do |cr| %>
+      <div class="">
+        <%= cr.label "All Cuisines" %> <br>
+        <%= collection_select(:cusines, :cuisine_id, @all_cuisines, :id, :cuisine_type, {}, {:multiple => true}) %>
+      </div>
+    <% end %>
+  </div> -->
+
   <div class="actions">
     <%= f.submit %>
   </div>
