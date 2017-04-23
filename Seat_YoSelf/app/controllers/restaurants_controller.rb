@@ -11,14 +11,14 @@ class RestaurantsController < ApplicationController
 
   def new
     @restaurant = Restaurant.new
+
+    # @all_cuisines = Cuisine.all used to generate the cuisines list in _form
   end
 
   def create
     # @restaurant = Restaurant.new(restaurant_params)
     # @restaurant.owner_id = current_user.id
     @restaurant = current_user.restaurants.new(restaurant_params)
-    # @cuisine = Cuisine.find(1)
-    # @restaurant.cuisines << @cuisine
 
     if @restaurant.save
       redirect_to restaurants_path
