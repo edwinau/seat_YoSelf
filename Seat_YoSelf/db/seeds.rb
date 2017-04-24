@@ -6,5 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-asian = Cuisine.create(cuisine_type: 'Asian')
-fake_restaurant = Restaurant.create(name: 'Fake', description: 'Fake',  owner_id: '1')
+cuisine_list = ["Chinese", "Japanese", "Thai", "Italian", "Pub-Food"]
+cuisine_list.each do |type|
+  Cuisine.create(cuisine_type: type)
+end
