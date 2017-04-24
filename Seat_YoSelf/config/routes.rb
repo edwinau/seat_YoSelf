@@ -4,8 +4,9 @@ Rails.application.routes.draw do
 
   resources :users, :except => [:index]
   resources :cuisines
-  resources :restaurants
+  resources :restaurants do
+    resources :reservations, :except => [:index]
+  end
 
-  resources :reservations, :except => [:index]
   resources :sessions, only: [:new, :create, :destroy]
 end
