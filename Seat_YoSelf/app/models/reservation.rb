@@ -12,7 +12,7 @@ class Reservation < ApplicationRecord
     # offset = time.utc_offset
     # only works for Eastern Time Zone (when in Daylight savings time)
     time = time.to_i - (-14400)
-    time = Time.at(time)
+    Time.at(time).beginning_of_hour
   end
 
   def reservation_date_cannot_be_in_the_past
