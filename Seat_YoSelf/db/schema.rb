@@ -10,19 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170423231024) do
+ActiveRecord::Schema.define(version: 20170424013056) do
 
   create_table "cuisines", force: :cascade do |t|
     t.string   "cuisine_type"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
-  end
-
-  create_table "cuisines_restaurants", id: false, force: :cascade do |t|
-    t.integer "cuisine_id",    null: false
-    t.integer "restaurant_id", null: false
-    t.index ["cuisine_id", "restaurant_id"], name: "index_Cuisines_Restaurants_on_cuisine_id_and_restaurant_id"
-    t.index ["restaurant_id", "cuisine_id"], name: "index_Cuisines_Restaurants_on_restaurant_id_and_cuisine_id"
   end
 
   create_table "reservations", force: :cascade do |t|
@@ -41,6 +34,7 @@ ActiveRecord::Schema.define(version: 20170423231024) do
     t.integer  "owner_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "photo"
     t.integer  "capacity"
     t.string   "city"
     t.string   "address"
