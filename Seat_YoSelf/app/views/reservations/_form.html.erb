@@ -13,12 +13,12 @@
 
   <div class="field">
     <%= f.label :time %><br />
-    <%= f.time_field :time %>
+    <%= f.datetime_select :time, discard_minute: true, ampm: true %>
   </div>
-  <div class="field">
+  <!-- <div class="field">
     <%= f.label :date %><br />
-    <%= f.date_field :date %>
-  </div>
+    <%= f.date_select :date %>
+  </div> -->
   <div class="field">
     <%= f.label :number_of_guests %><br />
     <%= f.number_field :number_of_guests %>
