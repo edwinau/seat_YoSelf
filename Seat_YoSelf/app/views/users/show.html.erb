@@ -1,4 +1,18 @@
 <h2>My Restaurants</h2>
 
+<% @user.restaurants.each do |restaurant|  %>
+  <div>
+    <p><%= restaurant.name %></p>
+    <p><%= restaurant.description %></p>
+  </div>
+<% end %>
 
 <h2>My Reservations</h2>
+
+<%  @user.reservations.each do |reservation| %>
+  <div>
+      <p> On <%= reservation.time.beginning_of_hour.to_formatted_s(:long_ordinal) %> </p>
+      <p> Seat <%= reservation.number_of_guests %> guests at
+      <%= link_to reservation.restaurant.name, restaurant_path(reservation.restaurant) %> </p>
+  </div>
+<% end %>
