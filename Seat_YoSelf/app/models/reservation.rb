@@ -2,7 +2,7 @@ class Reservation < ApplicationRecord
   belongs_to :user
   belongs_to :restaurant
 
-  def reservation_date_cannot_be_in_the_past
+  def self.reservation_date_cannot_be_in_the_past
     if @reservation.date.present? && @reservation.date < Date.today
       errors.add(:date, "can't be in the past")
     end
