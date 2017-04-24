@@ -1,15 +1,12 @@
-<hr>
-
-<h1>SEAT YOSELF INDEX XX</h1>
-
-<br>
-
 <%@restaurants.each do |restaurant| %>
-  <p>NAME: <%= restaurant.name%></p><p>DESCRIPTION: <%= restaurant.description%></p>
+  <div class="each_rest">
+    <p class="rest_name"> <%= restaurant.name%></p>
+    <p class="rest_description"><%= restaurant.description%></p>
+  </div>
 <%end%>
 
 <br>
 
 <%if current_user%>
-  <%=link_to 'Create new restaurant', new_restaurant_path %>
+  <div id="new_rest_button"><%=link_to 'Create new restaurant', new_restaurant_path %></div>
 <%end%>

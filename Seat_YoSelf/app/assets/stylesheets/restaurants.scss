@@ -1,3 +1,42 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.rest_name {
+  font-style: italic;
+  font-size: 1.3em;
+  color: #00AFF0;
+  padding: 10px 0 10px 0;
+}
+
+.rest_description {
+
+}
+
+.each_rest {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  margin-left: 100px;
+}
+
+#new_rest_button a:link{
+  left: 30px;
+  position: fixed;
+  display: block;
+  text-decoration: none;
+  top: 600px;
+  border: 3px white solid;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  background: white;
+  opacity: .6;
+  font-size: 1.3em;
+  font-family: arial;
+  height: 20px;
+}
+
+.form {
+  text-align: center;
+}

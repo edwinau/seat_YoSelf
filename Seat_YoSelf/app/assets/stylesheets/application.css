@@ -101,7 +101,7 @@ div a:link {
   border-radius: 15px;
   background: white;
   opacity: .8;
-  font-size: 1.3em;
+  font-size: 120%;
   font-family: arial;
 }
 
@@ -131,6 +131,25 @@ div#log_in_button a:link{
   color: black;
 }
 
+div#log_out a:link{
+  right: 80px;
+  top: 80px;
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: black;
+}
+
+div#hey_user a:link{
+  right: 230px;
+  top: 77px;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  color: black;
+  font-style: italic;
+}
+
 nav {
   margin-top: 400px;
   width: 100vw;
@@ -138,4 +157,44 @@ nav {
 
 h1{
   opacity: 0;
+}
+
+
+.rest_name {
+  font-style: italic;
+  font-size: 1.3em;
+  color: #00AFF0;
+  padding: 10px 0 10px 0;
+}
+
+.rest_description {
+
+}
+
+.each_rest {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  margin-left: 100px;
+}
+
+#new_rest_button a:link{
+  left: 30px;
+  position: fixed;
+  display: block;
+  text-decoration: none;
+  top: 600px;
+  border: 3px white solid;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  background: white;
+  opacity: .6;
+  font-size: 1.3em;
+  font-family: arial;
+  height: 20px;
+}
+
+.form {
+  text-align: center;
 }
