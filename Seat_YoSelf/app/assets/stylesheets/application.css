@@ -13,3 +13,225 @@
  *= require_tree .
  *= require_self
  */
+
+  /* http://meyerweb.com/eric/tools/css/reset/
+     v2.0 | 20110126
+     License: none (public domain)
+  */
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+ /*CSS RESET ABOVE-- CODE STARTS BELOW*/
+ html {
+   font-size: 1em;
+   font-family: arial;
+ }
+
+ img.img_header{
+  width: 100vw;
+  position: absolute;
+  z-index: -100;
+}
+
+img.img_logo{
+ width: 50%;
+ position: absolute;
+ top: 180px;
+ left: 60px;
+}
+
+img.img_tile{
+ width: 100vw;
+ height: 40px;
+ position: absolute;
+ opacity: .6;
+ top: 90px;
+}
+
+
+div a:link {
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  top: 210px;
+  border: 1px blue solid;
+  padding: 20px;
+  color: #3e9fe5;
+  border-radius: 15px;
+  background: white;
+  opacity: .8;
+  font-size: 120%;
+  font-family: arial;
+}
+
+div#rest_button a:link{
+  right: 300px;
+  text-align: center;
+}
+
+div#cuis_button a:link{
+  right: 100px;
+}
+
+div#sign_up_button a:link{
+  right: 250px;
+  top: 80px;
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  color: black;
+}
+
+div#log_in_button a:link{
+  right: 120px;
+  top: 80px;
+  background: none;
+  border: none;
+  font-size: 1.4em;
+  color: black;
+}
+
+div#log_out a:link{
+  right: 80px;
+  top: 80px;
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: black;
+}
+
+div#hey_user a:link{
+  right: 230px;
+  top: 77px;
+  background: none;
+  border: none;
+  font-size: 1.8em;
+  color: black;
+  font-style: italic;
+}
+
+nav {
+  margin-top: 400px;
+  width: 100vw;
+}
+
+h1{
+  opacity: 0;
+}
+
+
+.rest_name {
+  font-style: italic;
+  font-size: 1.3em;
+  color: #00AFF0;
+  padding: 10px 0 10px 0;
+}
+
+.rest_description {
+
+}
+
+.each_rest {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 25%;
+  margin-left: 100px;
+}
+
+#new_rest_button a:link{
+  left: 30px;
+  position: fixed;
+  display: block;
+  text-decoration: none;
+  top: 600px;
+  border: 3px white solid;
+  padding: 20px;
+  color: white;
+  border-radius: 15px;
+  background: white;
+  opacity: .6;
+  font-size: 1.3em;
+  font-family: arial;
+  height: 20px;
+}
+
+.form {
+  text-align: center;
+}
+
+textarea{
+  width: 300px;
+}
+
+input{
+  width: 300px;
+  text-align: center;
+}
+
+div a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* visited link */
+div a:visited {
+  text-decoration: none;
+  color: black;
+
+}
+
+/* mouse over link */
+div a:hover {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.4em;
+
+}
+
+/* selected link */
+div a:active {
+  text-decoration: none;
+
+}

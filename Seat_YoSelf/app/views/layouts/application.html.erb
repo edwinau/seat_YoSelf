@@ -10,17 +10,22 @@
 
   <body>
     <header>
+      <%=image_tag("SYheader.jpg", alt: "SYheader.jpg", class: "img_header")%>
+      <%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile")%>
+
       <h1>== Seat Yo'Self ==</h1>
+      <%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo")%>
+
       <nav>
-        <div> <%= link_to "Restaurants", restaurants_url %> </div>
-        <div> <%= link_to "Cuisines", cuisines_url %> </div>
+        <div id="rest_button"> <%= link_to "Restaurants", restaurants_url %> </div>
+        <div id="cuis_button"> <%= link_to "Cuisines", cuisines_url %> </div>
 
         <% if current_user %>
-          <div> <%= link_to "Hey! #{current_user.username}", user_path("current") %> </div>
-          <div> <%= link_to "Log out", session_path("current cookie"), :method => :delete %></div>
+          <div id="hey_user"> <%= link_to "Hey! #{current_user.username}", user_path("current") %> </div>
+          <div id="log_out"> <%= link_to "Log out", session_path("current cookie"), :method => :delete %></div>
         <% else %>
-          <div> <%= link_to "Sign Up", new_user_url %> </div>
-          <div> <%= link_to "Login", new_session_path %> </div>
+          <div id="sign_up_button"> <%= link_to "Sign Up", new_user_url %> </div>
+          <div id="log_in_button"> <%= link_to "Login", new_session_path %> </div>
         <% end %>
 
       </nav>

@@ -1,0 +1,15 @@
+<h2>Reservations</h2>
+
+<%  @reservations.each do |reservation| %>
+  <ul>
+  <div>
+    <li>
+      <p> At <%= reservation.time %>, On <%= reservation.date %>  </p>
+      <p> Seat <%= reservation.number_of_guests %> guests </p>
+      <%= link_to reservation.restaurant.name, restaurant_path(reservation.restaurant) %>
+    </li>
+  </div>
+  </ul>
+<% end %>
+
+<%= link_to "Back to Restaurants", restaurants_url %>
