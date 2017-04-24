@@ -4,9 +4,11 @@
   <ul>
   <div>
     <li>
+      <!-- show reservation time, and date; seats reserved; restaurant name and location  -->
       <p> At <%= reservation.time %>, On <%= reservation.date %>  </p>
       <p> Seat <%= reservation.number_of_guests %> guests </p>
       <%= link_to reservation.restaurant.name, restaurant_path(reservation.restaurant) %>
+      <p><%= reservation.restaurant.location %></p>
     </li>
   </div>
   </ul>
