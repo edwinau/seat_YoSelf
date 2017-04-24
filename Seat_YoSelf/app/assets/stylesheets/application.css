@@ -66,6 +66,7 @@
  /*CSS RESET ABOVE-- CODE STARTS BELOW*/
  html {
    font-size: 1em;
+   font-family: arial;
  }
 
  img.img_header{
@@ -107,6 +108,7 @@ div a:link {
 
 div#rest_button a:link{
   right: 300px;
+  text-align: center;
 }
 
 div#cuis_button a:link{
@@ -197,4 +199,39 @@ h1{
 
 .form {
   text-align: center;
+}
+
+textarea{
+  width: 300px;
+}
+
+input{
+  width: 300px;
+  text-align: center;
+}
+
+div a:link {
+  text-decoration: none;
+  color: black;
+}
+
+/* visited link */
+div a:visited {
+  text-decoration: none;
+  color: black;
+
+}
+
+/* mouse over link */
+div a:hover {
+  text-decoration: none;
+  color: blue;
+  font-size: 1.4em;
+
+}
+
+/* selected link */
+div a:active {
+  text-decoration: none;
+
 }
