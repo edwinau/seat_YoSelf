@@ -75,18 +75,18 @@
 }
 
 img.img_logo{
- width: 50%;
+ width: 53%;
  position: absolute;
- top: 180px;
+ top: 230px;
  left: 60px;
 }
 
 img.img_tile{
  width: 100vw;
- height: 40px;
+ height: 55px;
  position: absolute;
  opacity: .6;
- top: 90px;
+ top: 130px;
 }
 
 
@@ -94,7 +94,7 @@ div a:link {
   position: absolute;
   display: block;
   text-decoration: none;
-  top: 210px;
+  top: 240px;
   border: 1px blue solid;
   padding: 20px;
   color: #3e9fe5;
@@ -110,12 +110,12 @@ div#rest_button a:link{
 }
 
 div#cuis_button a:link{
-  right: 100px;
+  right: 75px;
 }
 
 div#sign_up_button a:link{
   right: 250px;
-  top: 80px;
+  top: 125px;
   background: none;
   border: none;
   font-size: 1.4em;
@@ -124,7 +124,7 @@ div#sign_up_button a:link{
 
 div#log_in_button a:link{
   right: 120px;
-  top: 80px;
+  top: 125px;
   background: none;
   border: none;
   font-size: 1.4em;
@@ -132,7 +132,7 @@ div#log_in_button a:link{
 }
 
 nav {
-  margin-top: 400px;
+  margin-top: 450px;
   width: 100vw;
 }
 

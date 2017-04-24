@@ -1,0 +1,9 @@
+<h2>Cuisines</h2>
+
+<ul>
+  <% @cuisines.each do |cuisine| %>
+  <li>
+    <%= link_to "#{cuisine.cuisine_type}", cuisine %>
+  </li>
+  <% end %>
+</ul>
