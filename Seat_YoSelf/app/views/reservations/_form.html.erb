@@ -13,13 +13,14 @@
 
   <div class="field">
     <%= f.label :time %><br />
-    <%= f.datetime_select :time, discard_minute: true, ampm: true, start_hour: @restaurant.first_seating, end_hour: @restaurant.last_seating %>
-
+    <%= f.datetime_select :time, discard_minute: true,
+                                 ampm: true,
+                                 start_hour: @restaurant.first_seating,
+                                 end_hour: @restaurant.last_seating,
+                                 default: -3.hours.from_now
+    %>
   </div>
-  <!-- <div class="field">
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </div> -->
+
   <div class="field">
     <%= f.label :number_of_guests %><br />
     <%= f.number_field :number_of_guests %>
