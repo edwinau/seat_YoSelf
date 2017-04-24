@@ -21,6 +21,7 @@ class ReservationsController < ApplicationController
     # @reservation = current_user.reservations.new(reservation_params)
 
     @reservation.user = current_user
+    @restaurant = @reservation.restaurant
     if @reservation.save
       redirect_to restaurant_path(@restaurant), notice: 'Reservation booked successfully'
     else
