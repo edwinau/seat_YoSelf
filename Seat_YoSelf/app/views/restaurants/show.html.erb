@@ -4,3 +4,5 @@
 
   <p><%= @restaurant.name %></p> <br>
   <p><%= @restaurant.description %></p>
+
+<%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %>
