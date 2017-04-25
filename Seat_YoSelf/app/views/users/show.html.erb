@@ -6,7 +6,7 @@
   <div class="user-show-restaurant">
     <p><%= restaurant.name %></p>
     <p><%= restaurant.description %></p>
-    <p ><%= link_to "Edit Restaurant", edit_restaurant_url, :class => "user-show-link" %></p>
+    <p ><%= link_to "Edit Restaurant", edit_restaurant_url(restaurant.id), :class => "user-show-link" %></p>
 <% end %>
   </div>
 <% end %>
