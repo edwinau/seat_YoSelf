@@ -23,10 +23,11 @@ class ReservationsController < ApplicationController
     @reservation.user = current_user
     @restaurant = @reservation.restaurant
     if @reservation.save
-      redirect_to restaurant_path(@restaurant), notice: 'Reservation booked successfully'
+      redirect_to user_path("current")
     else
       render :new
     end
+
 
     # if @reservation.save
     #   redirect_to user_url
