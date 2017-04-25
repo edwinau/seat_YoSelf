@@ -249,6 +249,10 @@ color: blue;
 font-style: italic;
 }
 
+h6{
+  opacity: 0;
+}
+
 
 .rest_name {
   font-style: italic;
