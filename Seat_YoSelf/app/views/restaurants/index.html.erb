@@ -2,7 +2,7 @@
 
 <a href="<%= restaurant_url(restaurant.id) %>">
   <div class="each_rest">
-    <img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" style="width: 200px;">
+    <div class="each_img"><img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" style="width: 200px;"></div>
     <p class="rest_name"> <%= restaurant.name%></p>
     <p class="rest_description"><%= restaurant.description%></p>
   </div></a>
