@@ -1,21 +1,24 @@
-<h2>My Restaurants</h2>
+
+<h2 class="user-show-header">My Restaurants</h2>
 
 <% @user.restaurants.each do |restaurant|  %>
-  <div>
+  <div class="user-show-restaurant">
     <p><%= restaurant.name %></p>
     <p><%= restaurant.description %></p>
-    <p><%= link_to "Edit Restaurant", edit_restaurant_url %></p>
+    <p ><%= link_to "Edit Restaurant", edit_restaurant_url, :class => "user-show-link" %></p>
+
   </div>
 <% end %>
 
-<h2>My Reservations</h2>
+<h2 class="user-show-header">My Reservations</h2>
 
 <%  @user.reservations.each do |reservation| %>
-  <div>
+  <div class="user-show-reservation">
       <p> On <%= reservation.time.beginning_of_hour.to_formatted_s(:long_ordinal) %> </p>
       <p> Seat <%= reservation.number_of_guests %> guests at
-      <%= link_to reservation.restaurant.name, restaurant_path(reservation.restaurant) %> </p>
-      <p><%= link_to "Edit Reservation", edit_restaurant_reservation_path(reservation.restaurant, reservation) %></p>
-      <p><%= link_to 'Cancel Reservation', restaurant_reservation_path(reservation.restaurant, reservation), method: :delete %></p>
+
+      <%= link_to reservation.restaurant.name, restaurant_path(reservation.restaurant) :class => "user-show-link-restaurant" %> </p>
+      <p><%= link_to "Edit Reservation", edit_restaurant_reservation_path(reservation.restaurant, reservation) :class => "user-show-link" %></p>
+      <p><%= link_to 'Cancel Reservation', restaurant_reservation_path(reservation.restaurant, reservation), method: :delete, :class => "user-show-link" %></p>
   </div>
 <% end %>

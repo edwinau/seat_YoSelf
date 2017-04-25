@@ -1,3 +1,49 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+div a:link.user-show-link {
+  left: 0;
+  color: #363636;
+  position: static;
+  display: inline-block;
+  text-decoration: none;
+  text-align: left;
+  border: 2px #363636 solid;
+  top: 0;
+  color: white;
+  border-radius: 5px;
+  background: white;
+  opacity: 1;
+  font-size: 0.7em;
+  font-family: arial;
+  height: auto;
+  width: auto;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-style: normal;
+  padding: 10px;
+}
+
+div a:visited.user-show-link {
+  color: #363636;
+}
+
+h2.user-show-header {
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  text-align: left;
+  margin-left: 10%;
+  font-size: 2em;
+  color: #291f1f;
+
+}
+
+div.user-show-restaurant, div.user-show-reservation {
+  border-bottom: 5px solid #363636;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
