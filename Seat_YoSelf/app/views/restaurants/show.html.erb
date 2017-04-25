@@ -14,6 +14,7 @@
     <p>Hours: <%= @restaurant.first_seating %>:00 - <%= @restaurant.last_seating + 1 %>:00</p> <br>
 
 
-  <div id="make_a_button"><%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %></div>
 
 </div>
+
+<div id="make_a_button"><%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %></div>

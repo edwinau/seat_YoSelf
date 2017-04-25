@@ -265,11 +265,13 @@ h1{
 }
 
 #make_a_button a:link{
-  left: 30px;
+  left: 50px;
   /*position: fixed;*/
+  position: relative;
   display: block;
   text-decoration: none;
-  top: 600px;
+  text-align: center;
+  top: 50px;
   border: 3px white solid;
   padding: 20px;
   color: white;
@@ -280,6 +282,7 @@ h1{
   font-family: arial;
   height: 20px;
   width: 200px;
+  margin-bottom: 50px;
 }
 
 .form {
