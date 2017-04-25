@@ -54,7 +54,8 @@
   <div class="field">
     <%= f.label :cuisine_id %>
     <%= f.select(:cuisine_id) do %>
-      <% @all_cuisines.each do |c| %>
+    <%= all_cuisines = Cuisine.all %>
+      <% all_cuisines.each do |c| %>
         <%= content_tag(:option, c.cuisine_type, value: c.id) %>
       <% end %>
     <% end %>

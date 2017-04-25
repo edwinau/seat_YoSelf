@@ -1,11 +1,13 @@
 <h2>My Restaurants</h2>
 
-<% @user.restaurants.each do |restaurant|  %>
-  <div>
-    <p><%= restaurant.name %></p>
-    <p><%= restaurant.description %></p>
-    <p><%= link_to "Edit Restaurant", edit_restaurant_url %></p>
-  </div>
+<% @restaurants.each do |restaurant| %>
+  <% if restaurant.owner_id == current_user.id %>
+    <div>
+      <p><%= restaurant.name %></p>
+      <p><%= restaurant.description %></p>
+      <p><%= link_to "Edit Restaurant", edit_restaurant_url(restaurant.id) %></p>
+    </div>
+  <% end %>
 <% end %>
 
 <h2>My Reservations</h2>
@@ -15,6 +17,7 @@
       <p> On <%= reservation.time.beginning_of_hour.to_formatted_s(:long_ordinal) %> </p>
       <p> Seat <%= reservation.number_of_guests %> guests at
       <%= link_to reservation.restaurant.name, restaurant_path(reservation.restaurant) %> </p>
+      <p><%= link_to "Edit Reservation", edit_restaurant_reservation_path(reservation, reservation.restaurant) %></p>
       <p><%= link_to "Edit Reservation", edit_restaurant_reservation_path(reservation, reservation.restaurant) %></p>
   </div>
 <% end %>
