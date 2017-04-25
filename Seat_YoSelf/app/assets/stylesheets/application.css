@@ -90,6 +90,10 @@ img.img_tile{
  top: 90px;
 }
 
+.each_img{
+  object-fit: cover;
+}
+
 div#rest_button a:link{
   position: absolute;
   display: block;
@@ -241,6 +245,11 @@ nav {
 }
 
 h1{
+color: blue;
+font-style: italic;
+}
+
+h6{
   opacity: 0;
 }
 
