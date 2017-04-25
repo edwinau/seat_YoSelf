@@ -1,10 +1,12 @@
 // Place all the styles related to the restaurants controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-div.show_img{
+div.show_img > img{
   position: absolute;
   display: inline;
   margin-left: 30px;
+  max-width: 400px;
+  max-height: 300px;
 }
 
 .show_name{
@@ -42,7 +44,7 @@ div.show_img{
   display: block;
   text-decoration: none;
   text-align: center;
-  top: 30px;
+  top: 100px;
   border: 3px blue solid;
   padding: 20px;
   border-radius: 15px;

@@ -1,12 +1,13 @@
 
 <h2 class="user-show-header">My Restaurants</h2>
 
-<% @user.restaurants.each do |restaurant|  %>
+<% @restaurants.each do |restaurant|  %>
+<% if current_user.id == restaurant.owner_id %>
   <div class="user-show-restaurant">
     <p><%= restaurant.name %></p>
     <p><%= restaurant.description %></p>
     <p ><%= link_to "Edit Restaurant", edit_restaurant_url, :class => "user-show-link" %></p>
-
+<% end %>
   </div>
 <% end %>
 
