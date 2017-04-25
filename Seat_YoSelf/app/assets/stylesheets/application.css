@@ -240,13 +240,18 @@ div#cuis_button a:visited {
 
 
 nav {
-  margin-top: 350px;
+  margin-top: 325px;
   width: 100vw;
 }
 
 h1{
-color: blue;
-font-style: italic;
+  position: absolute;
+  color: purple;
+  font-weight: bolder;
+  margin-left: 70px;
+  top: 100px;
+  z-index: 202;
+  font-size: 1.2em;
 }
 
 h6{
@@ -295,7 +300,20 @@ h6{
 }
 
 .form {
-  text-align: center;
+  text-align: right;
+  margin-right: 500px;
+}
+
+textarea {
+    width: 300px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+select {
+  width: 300px;
+  margin-right: 10px;
+  margin-left: 5px;
 }
 
 input{
@@ -342,4 +360,5 @@ div a:active {
 
 div.content {
   margin: 10px 0 10px 100px;
+  position: relative;
 }
