@@ -327,10 +327,6 @@ div a:active {
   text-decoration: none;
 }
 
-a {
-  padding-bottom: 5px;
-}
-
 div.content {
   margin: 10px 0 10px 100px;
 }
