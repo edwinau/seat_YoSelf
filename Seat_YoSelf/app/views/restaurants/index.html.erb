@@ -1,10 +1,8 @@
 <%@restaurants.each do |restaurant| %>
-<div>
-  <img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" style="width: 200px;">
-</div>
 
 <a href="<%= restaurant_url(restaurant.id) %>">
   <div class="each_rest">
+    <img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" style="width: 200px;">
     <p class="rest_name"> <%= restaurant.name%></p>
     <p class="rest_description"><%= restaurant.description%></p>
   </div></a>
