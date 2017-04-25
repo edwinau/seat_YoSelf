@@ -20,7 +20,7 @@ a = Restaurant.create(name: "Mark's Restaurant",
                       city: "Smiths Falls",
                       first_seating: 3,
                       last_seating: 20,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "http://static1.squarespace.com/static/53aa33b8e4b02d5200e9ddc8/t/53ab6980e4b0906e2b1c6fde/1464357876417/?format=750w",
                       address: "123 Conlon Rd.",
                       cuisine_id: 5)
 
@@ -31,7 +31,7 @@ b = Restaurant.create(name: "Country Diner",
                       city: "Smiths Falls",
                       first_seating: 12,
                       last_seating: 20,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "https://media-cdn.tripadvisor.com/media/photo-s/0d/31/d2/bd/photo0jpg.jpg",
                       address: "123 Main Street",
                       cuisine_id: 5)
 
@@ -44,7 +44,7 @@ c = Restaurant.create(name: "Goldman's",
                       city: "Thornhill",
                       first_seating: 7,
                       last_seating: 20,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "http://jewishfoodexperience.com/wp-content/uploads/2013/07/Restaurant-Jewish-style-full.jpg",
                       address: "456 Israel Drive",
                       cuisine_id: 6)
 
@@ -55,7 +55,7 @@ d = Restaurant.create(name: "Jacob's Kitchen",
                       city: "Forest Hill",
                       first_seating: 16,
                       last_seating: 23,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "https://www.chowhound.com/blog-media/2014/11/Tasting-Table-carousel.jpg",
                       address: "123 Telaviv Street",
                       cuisine_id: 6)
 
@@ -68,7 +68,7 @@ e = Restaurant.create(name: "House of Au",
                       city: "Markham",
                       first_seating: 0,
                       last_seating: 23,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "http://lorempixel.com/output/food-q-c-640-480-1.jpg",
                       address: "123 Hong Kong Street",
                       cuisine_id: 1)
 
@@ -79,7 +79,7 @@ f = Restaurant.create(name: "Manchu-Au",
                       city: "Markham",
                       first_seating: 0,
                       last_seating: 23,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "http://i2.cdn.cnn.com/cnnnext/dam/assets/160325033254-hk-dim-sum-fook-lam-moon-super-169.jpg",
                       address: "88 Edwin Street",
                       cuisine_id: 1)
 
@@ -92,7 +92,7 @@ g = Restaurant.create(name: "Kamayan",
                       city: "Mississauga",
                       first_seating: 12,
                       last_seating: 23,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "https://i0.wp.com/angsarap.net/wp-content/uploads/2015/03/Boodle-Fight-2.jpg",
                       address: "123 Margarita Street",
                       cuisine_id: 7)
 
@@ -103,6 +103,6 @@ g = Restaurant.create(name: "Margaritaville",
                       city: "Ajax",
                       first_seating: 0,
                       last_seating: 23,
-                      phone_number: "1234567890", url_for_photo: "http://placebear.com/200/200",
+                      phone_number: "1234567890", url_for_photo: "http://fsb.zedge.net/scale.php?img=NC83LzMvMC8xLTc0MTQyMzItNDczMDIwNC5qcGc&ctype=1&v=4&q=81&xs=620&ys=0&sig=4f1080d6106c941e31648b7b7f9d91c8ac59e659",
                       address: "15 Margaritaville Ave.",
                       cuisine_id: 7)
