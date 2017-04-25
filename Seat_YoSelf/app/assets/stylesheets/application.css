@@ -90,8 +90,7 @@ img.img_tile{
  top: 90px;
 }
 
-
-div a:link {
+div#rest_button a:link{
   position: absolute;
   display: block;
   text-decoration: none;
@@ -104,18 +103,35 @@ div a:link {
   opacity: .8;
   font-size: 120%;
   font-family: arial;
-}
-
-div#rest_button a:link{
   right: 300px;
   text-align: center;
 }
 
 div#cuis_button a:link{
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  top: 210px;
+  border: 1px blue solid;
+  padding: 20px;
+  color: #3e9fe5;
+  border-radius: 15px;
+  background: white;
+  opacity: .8;
+  font-size: 120%;
+  font-family: arial;
   right: 100px;
 }
 
 div#sign_up_button a:link{
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  border: 1px blue solid;
+  padding: 20px;
+  border-radius: 15px;
+  opacity: .8;
+  font-family: arial;
   right: 250px;
   top: 80px;
   background: none;
@@ -125,6 +141,14 @@ div#sign_up_button a:link{
 }
 
 div#log_in_button a:link{
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  border: 1px blue solid;
+  padding: 20px;
+  border-radius: 15px;
+  opacity: .8;
+  font-family: arial;
   right: 120px;
   top: 80px;
   background: none;
@@ -134,8 +158,16 @@ div#log_in_button a:link{
 }
 
 div#log_out a:link{
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  border: 1px blue solid;
+  padding: 20px;
+  border-radius: 15px;
+  opacity: .8;
+  font-family: arial;
   right: 80px;
-  top: 80px;
+  top: 85px;
   background: none;
   border: none;
   font-size: 1em;
@@ -143,6 +175,14 @@ div#log_out a:link{
 }
 
 div#hey_user a:link{
+  position: absolute;
+  display: block;
+  text-decoration: none;
+  border: 1px blue solid;
+  padding: 20px;
+  border-radius: 15px;
+  opacity: .8;
+  font-family: arial;
   right: 230px;
   top: 77px;
   background: none;
@@ -152,8 +192,51 @@ div#hey_user a:link{
   font-style: italic;
 }
 
+div#hey_user a:link {
+  text-decoration: none;
+  color: black;
+}
+div#hey_user a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+div#log_out a:link {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#log_out a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+div#rest_button a:link {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#rest_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+div#cuis_button a:link {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#cuis_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+
 nav {
-  margin-top: 400px;
+  margin-top: 350px;
   width: 100vw;
 }
 
@@ -177,10 +260,11 @@ h1{
   box-sizing: border-box;
   display: inline-block;
   width: 25%;
+  text-align: left;
   margin-left: 100px;
 }
 
-#new_rest_button a:link{
+#make_a_button a:link{
   left: 30px;
   position: fixed;
   display: block;
@@ -201,37 +285,48 @@ h1{
   text-align: center;
 }
 
-textarea{
-  width: 300px;
-}
-
 input{
   width: 300px;
+  height: 30px;
   text-align: center;
+  margin: 10px;
+  border-radius: 9px;
+}
+
+input[type="submit"]{
+  font-size: medium;
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+  background: white;
 }
 
 div a:link {
   text-decoration: none;
-  color: black;
+  color: blue;
+  font-style: italic;
 }
 
 /* visited link */
 div a:visited {
   text-decoration: none;
-  color: black;
+  color: blue;
 
 }
 
 /* mouse over link */
 div a:hover {
   text-decoration: none;
-  color: blue;
-  font-size: 1.4em;
-
+  color: #0047E5;
+  background-color:
+  font-size: 1.5em;
 }
 
 /* selected link */
 div a:active {
   text-decoration: none;
+}
 
+div.content {
+  margin: 10px 0 10px 100px;
 }
