@@ -1,15 +1,19 @@
-<%=link_to 'Back to Main', restaurants_path %>
+<div class="content">
 
-<div>
-  <img src="<%= @restaurant.url_for_photo %>" alt=" <%= @restaurant.name %> photo">
+  <%=link_to 'Back to Main', restaurants_path %>
+
+  <div>
+    <img src="<%= @restaurant.url_for_photo %>" alt=" <%= @restaurant.name %> photo">
+  </div>
+
+    <p><%= @restaurant.name %></p> <br>
+    <p><%= @restaurant.description %></p><br>
+    <p><%= @restaurant.address %></p> <br>
+    <p><%= @restaurant.city %></p> <br>
+    <p><%= @restaurant.phone_number %></p> <br>
+    <p>Hours: <%= @restaurant.first_seating %>:00 - <%= @restaurant.last_seating + 1 %>:00</p> <br>
+
+
+  <div id="make_a_button"><%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %></div>
+
 </div>
-
-  <p><%= @restaurant.name %></p> <br>
-  <p><%= @restaurant.description %></p><br>
-  <p><%= @restaurant.address %></p> <br>
-  <p><%= @restaurant.city %></p> <br>
-  <p><%= @restaurant.phone_number %></p> <br>
-  <p>Hours: <%= @restaurant.first_seating %>:00 - <%= @restaurant.last_seating + 1 %>:00</p> <br>
-
-
-<%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %>
