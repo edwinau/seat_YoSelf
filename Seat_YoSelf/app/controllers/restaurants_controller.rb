@@ -13,6 +13,11 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.new
 
     @all_cuisines = Cuisine.all #used to generate the cuisines list in _form
+
+    @cuisines_name_id = []
+    Cuisine.all.each do |cuisine|
+      @cuisines_name_id << [cuisine.cuisine_type, cuisine.id]
+    end
   end
 
   def create
@@ -29,6 +34,10 @@ class RestaurantsController < ApplicationController
 
   def edit
     @restaurant = Restaurant.find(params[:id])
+    @cuisines_name_id = []
+    Cuisine.all.each do |cuisine|
+      @cuisines_name_id << [cuisine.cuisine_type, cuisine.id]
+    end
   end
 
   def update
