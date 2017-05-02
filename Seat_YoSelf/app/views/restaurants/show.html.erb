@@ -1,7 +1,8 @@
-<%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile")%>
-<%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo")%>
+<body>
+  <%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile_show_rest")%>
+  <%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo_show_rest")%>
 
-<div id="res_show_top">
+<div id="show_contain">
   <div class="content">
 
   <div class="show_img">
@@ -20,4 +21,5 @@
     <%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %>
   </div>
 
-<div>
+  <div>
+</body>

@@ -75,7 +75,7 @@
  }
 
 header {
-  margin-bottom: 100px;
+  margin-bottom: 110px;
 }
 
  img.img_header{
@@ -92,10 +92,10 @@ img.img_logo{
 
 img.img_tile{
   width: 100%;
- height: 40px;
+ height: 60px;
  position: absolute;
  opacity: .6;
- top: 110px;
+ top: 100px;
 }
 
 div#rest_button a:link{
@@ -259,7 +259,7 @@ div#hey_user a:link{
   opacity: .8;
   font-family: Pacifico;
   right: 18%;
-  top: 95px;
+  top: 90px;
   background: none;
   border: none;
   font-size: 1.8em;
