@@ -1,4 +1,5 @@
-<div class="content">
+<div id="res_show_top">
+  <div class="content">
 
   <div class="show_img">
     <img src="<%= @restaurant.url_for_photo %>" alt=" <%= @restaurant.name %> photo">
@@ -10,9 +11,10 @@
     <p class="show_a"><%= @restaurant.city %></p> <br>
     <p class="show_a"><%= @restaurant.phone_number %></p> <br>
     <p class="show_a">Hours: <%= @restaurant.first_seating %>:00 - <%= @restaurant.last_seating + 1 %>:00</p> <br>
+  </div>
 
+  <div id="make_a_button_resta">
+    <%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %>
+  </div>
 
-
-</div>
-
-<div id="make_a_button_resta"><%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %></div>
+<div>
