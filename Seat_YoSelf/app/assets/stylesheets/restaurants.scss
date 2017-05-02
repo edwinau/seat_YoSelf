@@ -58,8 +58,12 @@ div.show_img > img{
   margin-left: 80px;
 }
 
-div.each_img {
-  width: 200px;
+.index_img {
+  width: 375px;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 #res_show_top {

@@ -74,6 +74,10 @@
    position: relative;
  }
 
+header {
+  margin-bottom: 100px;
+}
+
  img.img_header{
    width: 100%;
   z-index: -100;
@@ -118,6 +122,10 @@ div#rest_button a:visited {
   font-style: normal;
   color: black;
 }
+div#rest_button a:hover {
+  color: #0047E5;
+  font-size: 130%;
+}
 
 
 div#cuis_button a:link{
@@ -143,6 +151,10 @@ div#cuis_button a:visited {
   font-style: normal;
   color: black;
 }
+div#cuis_button a:hover {
+  color: #0047E5;
+  font-size: 130%;
+}
 
 div#sign_up_button a:link{
   position: absolute;
@@ -162,11 +174,17 @@ div#sign_up_button a:link{
   text-decoration: none;
   font-style: normal;
   color: black;
+  z-index: 500;
   }
 div#sign_up_button a:visited {
   text-decoration: none;
   font-style: normal;
   color: black;
+  z-index: 500;
+}
+div#sign_up_button a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 div#log_in_button a:link{
@@ -187,11 +205,17 @@ div#log_in_button a:link{
   text-decoration: none;
   font-style: normal;
   color: black;
+  z-index: 500;
 }
 div#log_in_button a:visited {
   text-decoration: none;
   font-style: normal;
   color: black;
+  z-index: 500;
+}
+div#log_in_button a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 div#log_out a:link{
@@ -212,11 +236,17 @@ div#log_out a:link{
   text-decoration: none;
   font-style: normal;
   color: black;
+  z-index: 500;
 }
 div#log_out a:visited {
   text-decoration: none;
   font-style: normal;
   color: black;
+  z-index: 500;
+}
+div#log_out a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 div#hey_user a:link{
@@ -237,10 +267,16 @@ div#hey_user a:link{
   font-style: italic;
   text-decoration: none;
   color: black;
+  z-index: 500;
 }
 div#hey_user a:visited {
   text-decoration: none;
   color: black;
+  z-index: 500;
+}
+div#hey_user a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 h1{
@@ -274,8 +310,12 @@ h6{
   display: inline-block;
   width: 25%;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 5%;
   margin-bottom: 50px;
+}
+
+.each_rest:hover{
+  opacity: .5;
 }
 
 #make_a_button a:link{

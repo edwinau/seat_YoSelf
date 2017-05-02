@@ -1,8 +1,11 @@
+<%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile")%>
+<%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo")%>
+
 <%@restaurants.each do |restaurant| %>
 
 <a href="<%= restaurant_url(restaurant.id) %>">
   <div class="each_rest">
-    <div class="each_img"><img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" style="width: 200px;"></div>
+    <div class="each_img"><img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" class="index_img"></div>
     <p class="rest_name"> <%= restaurant.name%></p>
     <p class="rest_description"><%= restaurant.description%></p>
   </div></a>
