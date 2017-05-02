@@ -170,11 +170,11 @@ div#log_out a:link{
   border-radius: 15px;
   opacity: .8;
   font-family: arial;
-  right: 80px;
-  top: 85px;
+  right: 5%;
+  top: 100px;
   background: none;
   border: none;
-  font-size: 1em;
+  font-size: 120%;
   color: black;
 }
 
@@ -187,8 +187,8 @@ div#hey_user a:link{
   border-radius: 15px;
   opacity: .8;
   font-family: arial;
-  right: 230px;
-  top: 77px;
+  right: 18%;
+  top: 95px;
   background: none;
   border: none;
   font-size: 1.8em;
