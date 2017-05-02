@@ -109,7 +109,16 @@ div#rest_button a:link{
   font-family: arial;
   right: 20%;
   text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
 }
+div#rest_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
 
 div#cuis_button a:link{
   position: absolute;
@@ -125,6 +134,14 @@ div#cuis_button a:link{
   font-size: 120%;
   font-family: arial;
   right: 5%;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#cuis_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
 }
 
 div#sign_up_button a:link{
@@ -141,6 +158,14 @@ div#sign_up_button a:link{
   background: none;
   border: none;
   font-size: 140%;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  }
+div#sign_up_button a:visited {
+  text-decoration: none;
+  font-style: normal;
   color: black;
 }
 
@@ -159,6 +184,14 @@ div#log_in_button a:link{
   border: none;
   font-size: 140%;
   color: black;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#log_in_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
 }
 
 div#log_out a:link{
@@ -175,6 +208,14 @@ div#log_out a:link{
   background: none;
   border: none;
   font-size: 120%;
+  color: black;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#log_out a:visited {
+  text-decoration: none;
+  font-style: normal;
   color: black;
 }
 
@@ -194,9 +235,6 @@ div#hey_user a:link{
   font-size: 1.8em;
   color: black;
   font-style: italic;
-}
-
-div#hey_user a:link {
   text-decoration: none;
   color: black;
 }
@@ -205,60 +243,12 @@ div#hey_user a:visited {
   color: black;
 }
 
-div#log_out a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#log_out a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
 
-div#rest_button a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#rest_button a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
 
-div#sign_up_button a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#sign_up_button a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
 
-div#log_in_button a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#log_in_button a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
 
-div#cuis_button a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#cuis_button a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
+
+
 
 h1{
   position: absolute;
