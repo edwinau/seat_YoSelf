@@ -69,29 +69,29 @@
    font-family: arial;
  }
 
+ body {
+   min-width: 1280px;
+   position: relative;
+ }
+
  img.img_header{
-  width: 100vw;
-  position: absolute;
+   width: 1280px;
   z-index: -100;
 }
 
 img.img_logo{
- width: 50%;
+ width: 635px;
  position: absolute;
  top: 180px;
- left: 60px;
+ left: 5%;
 }
 
 img.img_tile{
- width: 100vw;
+ width: 100%;
  height: 40px;
  position: absolute;
  opacity: .6;
- top: 90px;
-}
-
-.each_img{
-  object-fit: cover;
+ top: 110px;
 }
 
 div#rest_button a:link{
@@ -100,14 +100,14 @@ div#rest_button a:link{
   text-decoration: none;
   top: 210px;
   border: 1px blue solid;
-  padding: 20px;
+  padding: 1.5%;
   color: #3e9fe5;
   border-radius: 15px;
   background: white;
   opacity: .8;
   font-size: 120%;
   font-family: arial;
-  right: 300px;
+  right: 20%;
   text-align: center;
 }
 
@@ -117,14 +117,14 @@ div#cuis_button a:link{
   text-decoration: none;
   top: 210px;
   border: 1px blue solid;
-  padding: 20px;
+  padding: 1.5%;
   color: #3e9fe5;
   border-radius: 15px;
   background: white;
   opacity: .8;
   font-size: 120%;
   font-family: arial;
-  right: 100px;
+  right: 5%;
 }
 
 div#sign_up_button a:link{
@@ -136,11 +136,11 @@ div#sign_up_button a:link{
   border-radius: 15px;
   opacity: .8;
   font-family: arial;
-  right: 250px;
-  top: 80px;
+  right: 20%;
+  top: 100px;
   background: none;
   border: none;
-  font-size: 1.4em;
+  font-size: 140%;
   color: black;
 }
 
@@ -153,11 +153,11 @@ div#log_in_button a:link{
   border-radius: 15px;
   opacity: .8;
   font-family: arial;
-  right: 120px;
-  top: 80px;
+  right: 5%;
+  top: 100px;
   background: none;
   border: none;
-  font-size: 1.4em;
+  font-size: 140%;
   color: black;
 }
 
@@ -227,6 +227,28 @@ div#rest_button a:visited {
   color: black;
 }
 
+div#sign_up_button a:link {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#sign_up_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
+div#log_in_button a:link {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#log_in_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+
 div#cuis_button a:link {
   text-decoration: none;
   font-style: normal;
@@ -236,12 +258,6 @@ div#cuis_button a:visited {
   text-decoration: none;
   font-style: normal;
   color: black;
-}
-
-
-nav {
-  margin-top: 425px;
-  width: 100vw;
 }
 
 h1{
@@ -302,7 +318,7 @@ h6{
 
 .form {
   text-align: right;
-  margin-right: 500px;
+  margin-right: 35%;
 }
 
 textarea {
