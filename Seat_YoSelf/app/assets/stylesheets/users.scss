@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+div#user_top{
+  margin-top: 8%;
+}
+
 div a:link.user-show-link {
   left: 0;
   color: #363636;
@@ -44,5 +48,9 @@ div.user-show-restaurant, div.user-show-reservation {
   text-align: left;
   margin-left: 10%;
   margin-right: 10%;
+}
 
+.actions {
+  text-align: right;
+  margin-right: 35%;
 }

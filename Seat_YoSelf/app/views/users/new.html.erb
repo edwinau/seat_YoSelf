@@ -1,38 +1,40 @@
-<h2>Sign Up</h2>
+<%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile")%>
+<%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo")%>
 
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% @user.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
+<div id="user_top">
+  <%= form_for @user do |f| %>
+    <% if @user.errors.any? %>
+      <div class="error_messages">
+        <h2>Form is invalid</h2>
+        <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="form">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div class="form">
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+    </div>
+
+    <div class="form">
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+    </div>
+
+    <div class="form">
+      <%= f.label :password_confirmation %>
+      <%= f.password_field :password_confirmation %>
+    </div>
+
+    <div class="actions"><%= f.submit "Sign Up" %>
     </div>
   <% end %>
-
-  <div>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </div>
-
-  <div>
-    <%= f.label :username %>
-    <%= f.text_field :username %>
-  </div>
-
-  <div>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
-
-  <div>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
-
-  <div>
-    <%= f.submit "Sign Up" %>
-  </div>
-<% end %>
+</div>

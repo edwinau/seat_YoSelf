@@ -1,15 +1,20 @@
-<%= form_tag sessions_path do %>
-<div class="form">
-  <div class="field">
-    <%= label_tag :username %>
-    <%= text_field_tag :username, params[:username] %>
-  </div>
+<%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile")%>
+<%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo")%>
 
-  <div class="field">
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
-  </div>
+<div id="sessions_top">
+  <%= form_tag sessions_path do %>
+  <div class="form">
+    <div class="field">
+      <%= label_tag :username %>
+      <%= text_field_tag :username, params[:username] %>
+    </div>
 
-  <div class="actions"><%= submit_tag "Log in" %></div>
+    <div class="field">
+      <%= label_tag :password %>
+      <%= password_field_tag :password %>
+    </div>
+
+    <div class="actions_log_in"><%= submit_tag "Log in" %></div>
+  </div>
+  <% end %>
 </div>
-<% end %>

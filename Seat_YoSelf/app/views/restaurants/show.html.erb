@@ -1,4 +1,9 @@
-<div class="content">
+<body>
+  <%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile_show_rest")%>
+  <%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo_show_rest")%>
+
+<div id="show_contain">
+  <div class="content">
 
   <div class="show_img">
     <img src="<%= @restaurant.url_for_photo %>" alt=" <%= @restaurant.name %> photo">
@@ -10,9 +15,11 @@
     <p class="show_a"><%= @restaurant.city %></p> <br>
     <p class="show_a"><%= @restaurant.phone_number %></p> <br>
     <p class="show_a">Hours: <%= @restaurant.first_seating %>:00 - <%= @restaurant.last_seating + 1 %>:00</p> <br>
+  </div>
 
+  <div id="make_a_button_resta">
+    <%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %>
+  </div>
 
-
-</div>
-
-<div id="make_a_button_resta"><%= link_to 'Make A Reservation', new_restaurant_reservation_path(@restaurant) %></div>
+  <div>
+</body>

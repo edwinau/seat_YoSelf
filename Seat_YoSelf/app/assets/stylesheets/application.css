@@ -69,29 +69,33 @@
    font-family: arial;
  }
 
+ body {
+   min-width: 1277px;
+   position: relative;
+ }
+
+header {
+  margin-bottom: 110px;
+}
+
  img.img_header{
-  width: 100vw;
-  position: absolute;
+   width: 100%;
   z-index: -100;
 }
 
 img.img_logo{
- width: 50%;
+ width: 650px;
  position: absolute;
  top: 180px;
- left: 60px;
+ left: 7%;
 }
 
 img.img_tile{
- width: 100vw;
- height: 40px;
+  width: 100%;
+ height: 60px;
  position: absolute;
  opacity: .6;
- top: 90px;
-}
-
-.each_img{
-  object-fit: cover;
+ top: 100px;
 }
 
 div#rest_button a:link{
@@ -100,16 +104,29 @@ div#rest_button a:link{
   text-decoration: none;
   top: 210px;
   border: 1px blue solid;
-  padding: 20px;
+  padding: 1.5%;
   color: #3e9fe5;
   border-radius: 15px;
   background: white;
   opacity: .8;
   font-size: 120%;
   font-family: arial;
-  right: 300px;
+  right: 20%;
   text-align: center;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
 }
+div#rest_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#rest_button a:hover {
+  color: #0047E5;
+  font-size: 130%;
+}
+
 
 div#cuis_button a:link{
   position: absolute;
@@ -117,14 +134,26 @@ div#cuis_button a:link{
   text-decoration: none;
   top: 210px;
   border: 1px blue solid;
-  padding: 20px;
+  padding: 1.5%;
   color: #3e9fe5;
   border-radius: 15px;
   background: white;
   opacity: .8;
   font-size: 120%;
   font-family: arial;
-  right: 100px;
+  right: 5%;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#cuis_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+}
+div#cuis_button a:hover {
+  color: #0047E5;
+  font-size: 130%;
 }
 
 div#sign_up_button a:link{
@@ -136,12 +165,26 @@ div#sign_up_button a:link{
   border-radius: 15px;
   opacity: .8;
   font-family: arial;
-  right: 250px;
-  top: 80px;
+  right: 20%;
+  top: 100px;
   background: none;
   border: none;
-  font-size: 1.4em;
+  font-size: 140%;
   color: black;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  z-index: 500;
+  }
+div#sign_up_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  z-index: 500;
+}
+div#sign_up_button a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 div#log_in_button a:link{
@@ -153,12 +196,26 @@ div#log_in_button a:link{
   border-radius: 15px;
   opacity: .8;
   font-family: arial;
-  right: 120px;
-  top: 80px;
+  right: 5%;
+  top: 100px;
   background: none;
   border: none;
-  font-size: 1.4em;
+  font-size: 140%;
   color: black;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  z-index: 500;
+}
+div#log_in_button a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  z-index: 500;
+}
+div#log_in_button a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 div#log_out a:link{
@@ -170,12 +227,26 @@ div#log_out a:link{
   border-radius: 15px;
   opacity: .8;
   font-family: arial;
-  right: 80px;
-  top: 85px;
+  right: 5%;
+  top: 100px;
   background: none;
   border: none;
-  font-size: 1em;
+  font-size: 120%;
   color: black;
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  z-index: 500;
+}
+div#log_out a:visited {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  z-index: 500;
+}
+div#log_out a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 div#hey_user a:link{
@@ -186,62 +257,26 @@ div#hey_user a:link{
   padding: 20px;
   border-radius: 15px;
   opacity: .8;
-  font-family: arial;
-  right: 230px;
-  top: 77px;
+  font-family: Pacifico;
+  right: 18%;
+  top: 90px;
   background: none;
   border: none;
   font-size: 1.8em;
   color: black;
   font-style: italic;
-}
-
-div#hey_user a:link {
   text-decoration: none;
   color: black;
+  z-index: 500;
 }
 div#hey_user a:visited {
   text-decoration: none;
   color: black;
+  z-index: 500;
 }
-
-div#log_out a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#log_out a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-
-div#rest_button a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#rest_button a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-
-div#cuis_button a:link {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-div#cuis_button a:visited {
-  text-decoration: none;
-  font-style: normal;
-  color: black;
-}
-
-
-nav {
-  margin-top: 425px;
-  width: 100vw;
+div#hey_user a:hover {
+  color: #0047E5;
+  z-index: 500;
 }
 
 h1{
@@ -275,8 +310,12 @@ h6{
   display: inline-block;
   width: 25%;
   text-align: left;
-  margin-left: 100px;
+  margin-left: 5%;
   margin-bottom: 50px;
+}
+
+.each_rest:hover{
+  opacity: .5;
 }
 
 #make_a_button a:link{
@@ -302,7 +341,7 @@ h6{
 
 .form {
   text-align: right;
-  margin-right: 500px;
+  margin-right: 35%;
 }
 
 textarea {
@@ -360,6 +399,6 @@ div a:active {
 }
 
 div.content {
-  margin: 10px 0 10px 100px;
+  margin: 20px 20px 10px 100px;
   position: relative;
 }

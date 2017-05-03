@@ -4,19 +4,15 @@
     <title>SeatYoself</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
       <%=image_tag("SYheader.jpg", alt: "SYheader.jpg", class: "img_header")%>
-      <%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile")%>
 
-      <h6>== Seat Yo'Self</h6>
-      <%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo")%>
-
-      <nav>
         <div id="rest_button"> <%= link_to "Restaurants", restaurants_url %> </div>
         <div id="cuis_button"> <%= link_to "Cuisines", cuisines_url %> </div>
 
@@ -27,8 +23,6 @@
           <div id="sign_up_button"> <%= link_to "Sign Up", new_user_url %> </div>
           <div id="log_in_button"> <%= link_to "Login", new_session_path %> </div>
         <% end %>
-
-      </nav>
     </header>
     <%= yield %>
   </body>
