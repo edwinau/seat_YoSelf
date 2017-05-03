@@ -75,7 +75,6 @@
  }
 
 header {
-  margin-bottom: 110px;
 }
 
  img.img_header{
@@ -401,4 +400,8 @@ div a:active {
 div.content {
   margin: 20px 20px 10px 100px;
   position: relative;
+}
+
+.actions_a{
+ margin-right: 35%; 
 }

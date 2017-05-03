@@ -1,10 +1,13 @@
-<h2><%= @cuisine.cuisine_type %></h2>
+<%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile_show_rest")%>
+<%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo_show_rest")%>
+
+<h2 class="type"><%= @cuisine.cuisine_type %></h2>
 
 <% @cuisine.restaurants.each do |restaurant| %>
 
 <div>
-   <h4><%= restaurant.name %></h4>
-   <p><%= restaurant.description %></p>
+   <h4 class="listname"><%= restaurant.name %></h4>
+   <p class="listdes"><%= restaurant.description %></p>
 </div>
 
 <% end %>
