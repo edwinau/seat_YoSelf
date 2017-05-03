@@ -1,3 +1,43 @@
 // Place all the styles related to the reservations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+div#reso_top {
+  margin-top: 50px;
+}
+
+.actions_log_in {
+  text-align: right;
+}
+
+
+#reservation_time_1i{
+  text-align: right;
+  display: block;
+  height: 30px;
+  margin-bottom: 2%;
+  margin-left: 62%;
+}
+
+#reservation_time_2i{
+  text-align: right;
+  display: block;
+  height: 30px;
+  margin-bottom: 2%;
+  margin-left: 62%;
+}
+
+#reservation_time_3i{
+  text-align: right;
+  display: block;
+  height: 30px;
+  margin-bottom: 2%;
+  margin-left: 62%;
+}
+
+#reservation_time_4i{
+  text-align: right;
+  display: block;
+  height: 30px;
+  margin-bottom: 2%;
+  margin-left: 62%;
+}

@@ -2,53 +2,70 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 div.show_img > img{
-  position: absolute;
-  display: inline;
+  position: relative;
+  display: inline-block;
   margin-left: 15%;
-  width: 500px;
-  height: 350px;
+  width: 475px;
+  height: 300px;
   top: -60%;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 }
 
+.show_img{
+  width: 500px;
+  display: inline;
+}
 
-.show_name{
-  font-size: 1.4em;
+#rest_show_top{
+  margin-top: 70px;
+}
+
+
+.show_con{
+  position: absolute;
+  display: inline;
+  font-size: 1em;
   color: #00AFF0;
   height: 30px;
-  width: 200px;
-  margin-left: 90%;
-  font-style: italic;
+  width: 400px;
+  font-style: normal;
   padding-top: 20px;
+  margin-left: 3%;
+}
+
+.show_name{
+  font-weight: bold;
+  font-size: 2em;
+  margin-top: 80px;
 }
 
 .show_desc{
-  font-size: 1.3em;
+  font-size: 1.8em;
   color: black;
   height: 30px;
-  width: 200px;
-  margin-left: 90%;
+  width: 400px;
+  font-style: italic;
+  top: 50px;
 }
 
 .show_a{
-  font-size: 1.1em;
+  font-size: 1.4em;
   color: grey;
   height: 10px;
-  width: 200px;
-  margin-left: 600px;
+  width: 400px;
 }
 
 #make_a_button_resta a:link{
-  left: 50px;
+  left: 5%;
   color: blue;
   /*position: fixed;*/
   position: relative;
-  display: block;
+  display: inline;
   text-decoration: none;
   text-align: center;
-  top: 100px;
+  top: 50px;
   border: 3px blue solid;
   padding: 20px;
   border-radius: 15px;
@@ -58,8 +75,6 @@ div.show_img > img{
   font-family: arial;
   height: 20px;
   width: 200px;
-  margin-bottom: 50px;
-  margin-left: 80px;
 }
 
 .index_img {
@@ -71,7 +86,10 @@ div.show_img > img{
 }
 
 #show_contain {
-position: absolute;
+  box-sizing: border-box;
+  position: relative;
+  display: inline;
+  width: 100%;
 
 }
 
@@ -97,10 +115,11 @@ img.img_tile_show_rest{
  position: absolute;
  opacity: .6;
  top: 0px;
- -webkit-transition: opacity 2s, height 4s;
- transition: width 2s, height 4s;
-}
-
-img.img_tile_show_rest{
-  animation: 1s ease-out 0s 1 slideInFromLeft;
-}
+ }
+//  -webkit-transition: opacity 2s, height 4s;
+//  transition: width 2s, height 4s;
+// }
+//
+// img.img_tile_show_rest{
+//   animation: 1s ease-out 0s 1 slideInFromLeft;
+// }

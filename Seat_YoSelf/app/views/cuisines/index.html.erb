@@ -1,8 +1,8 @@
-<h2>Cuisines</h2>
-
+<%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile_show_rest")%>
+<%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo_show_rest")%>
 <ul>
   <% @cuisines.each do |cuisine| %>
-  <li>
+  <li class="type_index">
     <%= link_to "#{cuisine.cuisine_type}", cuisine %>
   </li>
   <% end %>

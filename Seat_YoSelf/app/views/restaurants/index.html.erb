@@ -1,18 +1,22 @@
 <%=image_tag("bgtile.png", alt: "bgtile.png", class: "img_tile")%>
 <%=image_tag("SYlogo.png", alt: "SYlogo.png", class: "img_logo")%>
 
-<%@restaurants.each do |restaurant| %>
+<div id="sessions_top">
 
-<a href="<%= restaurant_url(restaurant.id) %>">
-  <div class="each_rest">
-    <div class="each_img"><img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" class="index_img"></div>
-    <p class="rest_name"> <%= restaurant.name%></p>
-    <p class="rest_description"><%= restaurant.description%></p>
-  </div></a>
-<%end%>
+  <%@restaurants.each do |restaurant| %>
 
-<br>
+  <a href="<%= restaurant_url(restaurant.id) %>">
+    <div class="each_rest">
+      <div class="each_img"><img src="<%= restaurant.url_for_photo %>" alt=" <%= restaurant.name %> photo" class="index_img"></div>
+      <p class="rest_name"> <%= restaurant.name%></p>
+      <p class="rest_description"><%= restaurant.description%></p>
+    </div></a>
+  <%end%>
 
-<%if current_user%>
-  <div id="make_a_button"><%=link_to 'New restaurant', new_restaurant_path %></div>
-<%end%>
+  <br>
+
+  <%if current_user%>
+    <div id="make_a_button"><%=link_to 'New restaurant', new_restaurant_path %></div>
+  <%end%>
+
+</div>
